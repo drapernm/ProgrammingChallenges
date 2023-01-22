@@ -1,5 +1,7 @@
 '''
-refences: https://medium.com/@stella96joshua/how-to-combine-multiple-csv-files-using-python-for-your-analysis-a88017c6ff9e
+Author: Noah Draper
+Brief Description: Program combines all CSV files in "fixtures" directory, excluding the combined file if it already exists
+References: https://medium.com/@stella96joshua/how-to-combine-multiple-csv-files-using-python-for-your-analysis-a88017c6ff9e
             https://stackoverflow.com/questions/41857659/python-pandas-add-filename-column-csv
             https://stackoverflow.com/questions/20638040/glob-exclude-pattern
 '''
@@ -9,7 +11,7 @@ from fileinput import filename
 import pandas as pd
 import glob
 #set directory
-os.chdir("fixtures")
+os.chdir('fixtures')
 # verify the path
 #cwd = os.getcwd() 
 #print("Current working directory is:", cwd)
