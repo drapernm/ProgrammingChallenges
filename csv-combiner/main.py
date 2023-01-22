@@ -1,6 +1,7 @@
 '''
 Author: Noah Draper
-Brief Description: Program combines all CSV files in "fixtures" directory, excluding the combined file if it already exists
+Brief Description: Program combines all CSV files in "fixtures" directory, excluding the combined file if it already exists.
+                    New combined csv file will be in "fixtures"
 References: https://medium.com/@stella96joshua/how-to-combine-multiple-csv-files-using-python-for-your-analysis-a88017c6ff9e
             https://stackoverflow.com/questions/41857659/python-pandas-add-filename-column-csv
             https://stackoverflow.com/questions/20638040/glob-exclude-pattern
@@ -17,7 +18,7 @@ os.chdir('fixtures')
 #print("Current working directory is:", cwd)
 
 #reference all CSV files in 'fixtures'
-csv_files = glob.glob("[!_]*.csv")  #[!_] - excludes all files that start w/ underscore. name new file _combined_csv to avoid redundancies
+csv_files = glob.glob('[!_]*.csv')  #[!_] - excludes all files that start w/ underscore. name new file _combined_csv to avoid redundancies
 #print(csv_files) #verify csv file list
 
 data = [] #list of dataframes as an agrument
